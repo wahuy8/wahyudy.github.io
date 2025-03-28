@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    background-color: steelblue;
+    color: aliceblue;
+    padding: 40px;
+    font-size: 15px;
+}
+
+span {
+    font-size: 20px;
+    color: burlywood;
+}
+
+.container {
+    width: 95%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.judulKonten {
+    justify-items: center;
+}
+
+#h2 {
+    margin-bottom: 10px;
+}
+
+#para2 {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#persegi {
+    display: none;
+}
+
+#persegi + label{
+    border-radius: 3px;
+    display: flex;
+    padding: 5px;
+    border: none;
+    justify-content: center;
+    margin-bottom: 1px;
+}
+
+#persegi:checked + label{
+    background-color: burlywood;
+    color: white;
+}
+
+#persegiPanjang {
+    display: none;
+}
+
+#persegiPanjang + label{
+    border-radius: 3px;
+    display: flex;
+    padding: 5px;
+    border: none;
+    justify-content: center;
+}
+
+#persegiPanjang:checked + label{
+    background-color: burlywood;
+    color: white;
+}
+
+.luasP , .kelP {
+    height: content-box;
+    border-bottom: 0.6px solid steelblue;
+}
+
+.luasPPanjang, .kelPPanjang {
+    height: content-box;
+    border-bottom: 0.6px solid steelblue;
+}
+
+#isiLuasP , #isiKelP {
+    background-color: steelblue;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+#isiLuasPPanjang, #isiKelPPanjang {
+    background-color: steelblue;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.kotak {
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+.kotakP {
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+    width: 150px;
+    height: 100px;
+    border: 1px solid red;
+}
+        
+.sudut {
+    position: absolute;
+    font-weight: bold;
+    color: black;
+}
+
+.a { top: -15px; left: -15px; }
+.b { top: -15px; right: -15px; }
+.c { bottom: -15px; left: -15px; }
+.d { bottom: -15px; right: -15px; }
+.bujur { 
+    position: absolute;
+    font-weight: bold;
+    bottom: -20px; left: 15px;
+    font-size: x-small;
+}
+
+.pP {
+    position: absolute;
+    font-weight: bold;
+    bottom: -20px; left: 40px;
+    font-size: x-small;
+}
+
+.rumusLuasP , .rumusKelP {
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+.rumusLuasPPanjang, .rumusKelPPanjang {
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+#lss {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+
+#ket {
+    margin-top: 15px;
+}
+
+#s {
+    margin-bottom: 30px;
+}
+
+#l {
+    margin-bottom: 30px;
+}
+
+#labelSisi {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 800;
+    height: 50px;
+}
+
+.inputButton {
+    margin: 2px 2.5% 5px 2.5%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 95%;
+}
+
+#sisi, #sisiKel {
+    margin-bottom: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#panjang, #panjangKel {
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 15px;
+}
+#lebar, #lebarKel {
+    margin-bottom: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.input-group {
+    border: 1px solid steelblue;
+}
+
+.form-group, .input-group {
+    margin-bottom: 1px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 1px;
+    align-items: center;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: steelblue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset, .resetPP, .resetKel, .resetPPKel {
+    display: flex;
+    justify-content: right;
+}
+
+#reset, #resetPP, #resetKel, #resetPPKel {
+    background-color: sandybrown;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.hasil, .hasil1, .hasilKel, .hasil1Kel {
+    margin-left: 20% auto;
+    display: flex;
+    margin-top: 20px;
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: steelblue;
+    color: whitesmoke;
+    border-radius: 7px;
+    width: 80%;
+}
+

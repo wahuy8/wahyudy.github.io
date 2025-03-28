@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=UTF-8">
+    <link rel="stylesheet" href="styles/style.css"/>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+    
+    <title>Katik | Kalkulator Matematik</title>
+</head>
+<body>
+    
+    <header class="logoKatik">
+        <h1 id="logo">Katik <span>Kalkulator Matematik</span></h1>
+    </header>
+    
+    <div class="container">
+        
+        <div class="judulKonten">
+            <h2 id="h2">Welcome to Katik</h2>
+            <p id="para1">Halo, selamat datang di katik.</p>
+            <p id="para2">Aplikasi sederhana penghitung luas dan keliling bangun datar.</p>
+        </div>
+        
+        <div class="form-group">
+            <input type="radio" id="persegi" name="bentuk" value="persegi" checked>
+            <label for="persegi">Persegi</label>
+            <input type="radio" id="persegiPanjang" name="bentuk" value="persegiPanjang">
+            <label for="persegiPanjang">Persegi Panjang</label>
+        </div>
+        
+        <div id="inputPersegi" class="input-group">
+            
+            <div class="luasP">
+                
+                <h2 id="isiLuasP">Luas Persegi</h2>
+                
+                <div class="kotak">
+                    <div class="sudut a">a</div>
+                    <div class="sudut b">b</div>
+                    <div class="sudut c">c</div>
+                    <div class="sudut d">d</div>
+                    <div class="bujur">Bujur Sangkar</div>
+                </div>
+                
+                <div class="rumusLuasP">
+                    <p>Rumus luas persegi yaitu:</p>
+                    <h4 id="lss">L = s x s</h4>
+                    <h4 id="ket">Dimana:</h4>
+                    <p id="L">L = Luas</p>
+                    <p id="s">s = Sisi</p>
+                </div>
+            
+            </div>
+            
+            <label for="sisi" id="labelSisi">Hitung Luas Persegi</label>
+            
+            <div class="inputButton">
+                <input type="number" id="sisi" placeholder="sisi">
+                <button id="hitung">Hitung</button>
+            </div>
+            
+            <div class="reset">
+                <button id="reset">Reset</button>
+            </div>
+            
+            <div id="hasil" class="hasil"></div>
+        
+        </div>
+        
+        <div id="inputPersegiPanjang" class="input-group" style="display: none;">
+            
+            <div class="luasPPanjang">
+                
+                <h2 id="isiLuasPPanjang">Luas Persegi Panjang</h2>
+                
+                <div class="kotakP">
+                    <div class="sudut a">a</div>
+                    <div class="sudut b">b</div>
+                    <div class="sudut c">c</div>
+                    <div class="sudut d">d</div>
+                    <div class="pP">Persegi Panjang</div>
+                </div>
+                
+                <div class="rumusLuasPPanjang">
+                    <p>Rumus luas persegi panjang yaitu:</p>
+                    <h4 id="lss">L = p x l</h4>
+                    <h4 id="ket">Dimana:</h4>
+                    <p id="L">L = Luas</p>
+                    <p id="p">p = Panjang</p>
+                    <p id="l">l = lebar</p>
+                </div>
+                
+            </div>
+                
+            <label for="sisi" id="labelSisi">Hitung Luas Persegi Panjang</label>
+            
+            <div class="inputButton">
+               <input type="number" id="panjang" placeholder="panjang">
+               <input type="number" id="lebar" placeholder="lebar">
+               <button id="hitung1">Hitung</button>
+            </div>
+            
+            <div class="resetPP">
+               <button id="resetPP">Reset</button>
+            </div>
+            
+            <div id="hasil1" class="hasil"></div>
+            
+        </div>
+        
+        <div id="inputPersegiKel" class="input-group">
+            
+            <div class="kelP">
+                
+                <h2 id="isiKelP">Keliling Persegi</h2>
+                
+                <div class="kotak">
+                    <div class="sudut a">a</div>
+                    <div class="sudut b">b</div>
+                    <div class="sudut c">c</div>
+                    <div class="sudut d">d</div>
+                    <div class="bujur">Bujur Sangkar</div>
+                </div>
+                
+                <div class="rumusKelP">
+                    <p>Rumus keliling persegi yaitu:</p>
+                    <h4 id="lss">K = 4 x s</h4>
+                    <h4 id="ket">Dimana:</h4>
+                    <p id="L">K = Keliling</p>
+                    <p id="s">s = Sisi</p>
+                </div>
+            
+            </div>
+            
+            <label for="sisiKel" id="labelSisi">Hitung Keliling Persegi</label>
+            
+            <div class="inputButton">
+                <input type="number" id="sisiKel" placeholder="sisi">
+                <button id="hitungKel">Hitung</button>
+            </div>
+            
+            <div class="resetKel">
+                <button id="resetKel">Reset</button>
+            </div>
+            
+            <div id="hasilKel" class="hasil"></div>
+        
+        </div>
+        
+        <div id="inputPersegiPanjangKel" class="input-group" style="display: none;">
+            
+            <div class="kelPPanjang">
+                
+                <h2 id="isiKelPPanjang">Keliling Persegi Panjang</h2>
+                
+                <div class="kotakP">
+                    <div class="sudut a">a</div>
+                    <div class="sudut b">b</div>
+                    <div class="sudut c">c</div>
+                    <div class="sudut d">d</div>
+                    <div class="pP">Persegi Panjang</div>
+                </div>
+                
+                <div class="rumusKelPPanjang">
+                    <p>Rumus keliling persegi panjang yaitu:</p>
+                    <h4 id="lss">K = 2 x (p + l)</h4>
+                    <h4 id="ket">Dimana:</h4>
+                    <p id="L">K = Keliling</p>
+                    <p id="p">p = Panjang</p>
+                    <p id="l">l = lebar</p>
+                </div>
+                
+            </div>
+                
+            <label for="sisiKel" id="labelSisi">Hitung Kel Persegi Panjang</label>
+            
+            <div class="inputButton">
+               <input type="number" id="panjangKel" placeholder="panjang">
+               <input type="number" id="lebarKel" placeholder="lebar">
+               <button id="hitung1Kel">Hitung</button>
+            </div>
+            
+            <div class="resetPPKel">
+               <button id="resetPPKel">Reset</button>
+            </div>
+            
+            <div id="hasil1Kel" class="hasil"></div>
+            
+        </div>
+        
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
